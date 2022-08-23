@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+ <style>
+
+.fa-size{
+   font-size: 100px;
+   color: #1A1830;
+}
+
+   .exhibitor-btn{
+  padding: 7px 8px
+  font-size: 12px;
+  line-height: 16px;
+  height: 30px;
+}
+.exhibitor-btn {
+    padding: 7px 8px;
+    font-size: 12px;
+    line-height: 16px;
+    height: 30px;
+}
+ .btn {
+  color: white!important;
+  background: #2d9ed6;
+  }
+  .btn:focus {
+    outline: none; }
+  .btn:hover {
+    color: #fff;
+    background: #d20055;
+    -webkit-box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 20px 30px 0px rgba(0, 0, 0, 0.15); }
+  .btn.fill {
+    background: transparent;
+    padding: 0 25px;
+    color: #fff;
+    margin-left: 20px;
+    border: 2px solid #fff; }
+    .btn.fill:hover {
+      background: #e7015e;
+      border-color: #e7015e; }
+  .btn.btn-round {
+    border-radius: 36px;
+    -webkit-border-radius: 36px;
+    -ms-border-radius: 36px; }
+ .btn.white{
+   background: white;
+   color: #0b0b0b;
+ }
+  .btn.purple{
+   background: #930FB0!important;
+  }
+  .btn.blue{
+   background: #113DE4!important;
+  }
+  .btn.orange{
+   background: #F94B18!important;
+  }
+
+.btn-link {
+  font-size: 16px;
+  font-weight: 700;
+  color: #222222;
+  text-decoration: none !important; }
+  .btn-link i {
+    margin-left: 6px;
+    position: relative;
+    top: 2px; }
+  .btn-link:hover {
+    color: #e7015e; }
+
+    .ts-footer-social ul {
+  padding: 0; }
+  .ts-footer-social ul li {
+    display: inline-block;
+    list-style: none; }
+    .ts-footer-social ul li a {
+      display: block;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      -webkit-border-radius: 50%;
+      -ms-border-radius: 50%;
+      border: 1px solid #525164;
+      text-align: center;
+      color: #ffffff;
+      font-size: 20px;
+      padding: px 0;
+      margin: 0 px; }
+      .ts-footer-social ul li a:hover {
+        color: #FFFFFF;
+        background: #2d9ed6;
+        border-color: #0196da;
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg); 
+     }
+     .BackTo {
+  background: #2d9ed6 none repeat scroll 0 0;
+  border-radius: 5%;
+  bottom: 35px;
+  color: #979797;
+  cursor: pointer;
+  height: 44px;
+  position: fixed;
+  right: 14px;
+  text-align: center;
+  width: 44px;
+  z-index: 9;
+  display: block;
+  padding: 8px 0; }
+  .BackTo a {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 2px; 
+ }
+ .navbar: hover{
+   background-color: blue;
+
+ }
+ .nav-link: hover{
+background-color: blueviolet;
+ }
+ .horizontal-rule{
+   border: 1px solid #1A1830;
+   border-radius: 5px;
+ }
+ </style>
+
+</head>
+<body> 
+<div class="container ">
+   <header id="header" class="header nav-border" style="">
+      <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: #222131;">
+          
+         <a href="#" class="navbar-brand">
+            <img src="images/logo.png" alt="logo" style="padding-top: 10px; padding-bottom: 10px; margin-left: 104.5px;line-height: 50px;">
+         </a>
+
+         <button class="navbar-toggler sticky-top" type="button" data-toggle="collapse"data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+         <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-top: 10px; margin-right: 104.5px;">
+            <ul class="navbar-nav ml-auto">
+               <li class="nav-item"><a class=" nav-link" href="#"><b style="color:white; font-size:14px">HOME</a></b></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><b style="color:white; font-size:14px">ABOUT BANGLADESH</b></a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">About Bangladesh</a><hr class="horizontal-rule">
+                     <a class="dropdown-item" href="#">Father of nation</a><hr class="horizontal-rule">
+                     <a class="dropdown-item" href="#">honorable prime minister</a>
+                  </div>
+               </li>
+               <li class="nav-item"><a class=" nav-link" href="#"><b style="color:white; font-size:14px">ABOUT ORGANIZER</b></a></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><b style="color:white; font-size:14px">FOR BUYERS</b></a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Why source from Bangladesh?</a><hr class="horizontal-rule">
+                     <a class="dropdown-item" href="#">Bangladesh export products</a>
+                  </div>
+               </li>
+               <li class="nav-item"><a class=" nav-link" href="#"><b style="color:white; font-size:14px">FOR EXHIBITORS</b></a></li>
+               <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><b style="color:white; font-size:14px">NEWS & MEDIA</b></a>
+                  <div class="dropdown-menu">
+                     <a class="dropdown-item" href="#">Inauguration</a><hr class="horizontal-rule">
+                     <a class="dropdown-item" href="#">Webinar</a><hr class="horizontal-rule">
+                     <a class="dropdown-item" href="#">Gallery</a><hr class="horizontal-rule">
+                     <a class="dropdown-item" href="#">Press conference</a>
+                  </div>
+               </li>
+               <li class="nav-item"><a class=" nav-link" href="#"><b style="color:white">CONTACT US</b></a></li>
+             </ul>
+         </div>
+      </nav>  
+   </header>
+</div>
+   <hr>
+   <hr>
+   <hr>
+   <hr>
+   <section style="padding:0;position:relative; margin-top: 30px;">
+
+   <div>
+      <div>
+         <img width="100%" src="images/slider-3.jpg" alt="Banner">
+         </div>
+        </div>
+    </section>
+ <section style="background-color:#1A1830; color: white; padding-bottom:70px;">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-12" style="padding-top:70px;">
+            <h1 style="font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">Connect with Bangladeshi Exporters on Sourcing Bangladesh 2021 Virtual Edition!</h1> <br>
+            <p style="font-family: 'Lato', 'Roboto', sans-serif;">Due to the global pandemic situation caused by COVID-19, physical trade fairs in various important business hubs of the world have come to a standstill. The Export Promotion Bureau of Bangladesh presents the Online Sourcing Exhibition "Sourcing Bangladesh 2021 – Virtual Edition". It is an excellent opportunity for Commodity and Service Exporters to connect with foreign buyers with life-like communication features.</p>
+         </div>
+
+         <div class="col-lg-6 col-sm-12">
+            <p style="font-family: 'Lato', 'Roboto', sans-serif; line-height: 26px; font-size: 16px;">"Sourcing Bangladesh 2021 – Virtual Edition" features virtual booths, digital display of Exhibits, Brochures, Audio and Visual presentation, Live chat, as well as virtual B2B meetings and webinars. In addition, there will be a buyer-seller database on the fair website. The main purpose of this Online Sourcing Exhibition on a Virtual Platform is to bring forward Bangladesh Manufacturers and Exporters strength to the world. The Online Sourcing Exhibition will also arrange Matchmaking of local exporters with potential foreign buyers and to connect with foreign buyers with a life-like user experience with features like Live Chat, Call, or Video Conference."Sourcing Bangladesh 2021 - Virtual Edition" is focused on the major export sectors of Bangladesh, namely: Readymade Garments, Leather & Leather Products, Jute & Jute Products, Home Decor & Home-textiles, Pharmaceuticals, Agro and Argo-processed Products (Fisheries inclueded), Plastics, Light Engineering Products, Electric and Electronics, ICT, Furniture, Ceramics, and Handicrafts.</p>
+            <a class="btn exhibitor-btn " href="#">READ MORE</a>
+
+         </div>
+
+         <div class="col-lg-6 col-sm-12">
+            <img class="img-fluid" src="images/why-sourcinb-bd.png">
+            <div class="mt-5 mb-5"><br>
+            </div>
+            <div class="row">
+               <div class="col-lg-6">
+                  <a class="btn exhibitor-btn " href="#">WHY SOURCE FROM BANGLADESH?</a>
+               </div>
+               <div class="col-lg-6">
+                  <a class="btn exhibitor-btn " href="#">BANGLADESH EXPORT PRODUCTS</a>
+               </div> 
+            </div>
+         </div>
+      </div>
+   </div>
+ </section>
+
+
+<section>
+   <div class="container">
+      <h1 style="font-weight: 400px; padding-top: 70px;font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">About Bangladesh</h1> <br>
+      <div class="row">
+         <div class="col-lg-6">
+            <p class="text-justify text-dark" style="font-family: 'Lato', 'Roboto', sans-serif;line-height: 26px;">Bangladesh - one of the fastest growing economies of South Asia got her independence in 1971 after the 9-month long Liberation war under the undisputed and unrivalled leadership of the Father of the Nation Bangabandhu Sheikh Mujibur Rahman. Under the dynamic leadership of his able daughter, the Honourable Prime Minister Sheikh Hasina, Bangladesh has made remarkable progress in raising incomes, reducing poverty and improving social indicators and has been classified as a middle-income country by World Bank.</p>
+            
+            <p class="text-justify text-dark" style="font-family: 'Lato', 'Roboto', sans-serif;line-height: 26px;">Bangladesh belongs to the largest river delta as well as one of the most fertile regions of the world with a total area of 1,47,570 sq.km. and a coastline of 710 (check) km. It has a population of 166.50 million (Economic Review 2020), making it one of the densely populated countries of the world. Bangladesh is largely ethnically homogeneous. Over 98 percent of the people speak in Bangla. English is widely spoken as well. The country is covered with network of rivers and canals forming a maze of interconnecting channels and rich water ways.</p>
+            <a class="btn exhibitor-btn " href="#">READ MORE</a>
+         </div>
+         <div class="col-lg-6">
+            <img class="img-fluid" src="images/why-bangladesh.png" alt="why-bangladesh">
+            
+         </div>  
+      </div> 
+   </div>
+</section>
+
+
+<section style="background-color: #f5f5f5">
+   <div class="container" style="padding-right: 15px; padding-left: 15px; padding-top:70px">
+      <div class="row">
+         <div class="col-lg-12">
+            <h1 style="font-weight: 400px;font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">Why Source from Bangladesh?</h1><br>
+            <p class="text-justify text-dark">Bangladesh exports to 202 countries and territories of the world and the number of products with HS code is 766 (Seven Hundred Sixty-Six). The volume of merchandise and service export in terms of value was 45,367.8 million in the concluding FY 2020-2021. The growth of export is also phenomenal. Due to the fallout of covid like other dominant economies, Bangladesh was also affected but in the FY 2020-2021 Bangladesh rebounded and registered 15.10% growth. The export scenario of Bangladesh indicates her faster moving forward towards Middle Income Country by 2024.</p> <br>   
+         </div>  
+      </div>
+      <div class="row">
+         <div class="col-md-6 col-sm-12 text-center">
+            <h3 style="margin-bottom:20px;font-weight: 400px;font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">Trend in Export Trade</h3>
+              <div class="table-responsive">
+                 <table class="text-justify table table-striped">
+                    <tbody>
+                       <tr>
+                          <td></td>
+                          <td>1972-73</td>
+                          <td>2020-21</td>
+                       </tr>
+                       <tr>
+                          <td>No. of Products</td>
+                          <td>25</td>
+                          <td>751 (H.S. Code 4 digit)</td>
+                       </tr>
+                       <tr>
+                          <td>No. of Markets</td>
+                          <td>68</td>
+                          <td>203</td>
+                       </tr>
+                       <tr>
+                          <td>Export Value</td>
+                          <td>US$ 348.41 M</td>
+                          <td>US$ 45,367.8 M</td>
+                       </tr>
+                    </tbody>  
+                 </table>  
+              </div>   
+           </div>
+           <div class="col-md-6 col-sm-12 text-center">
+              <h4 style="margin-bottom:20px;font-weight: 400px;font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">Export from Bangladesh 1972-73 to 2020-21</h4>
+              <img class="img-fluid" src="images/export-from-bangladesh-20-21.png" alt="exprt from bd">
+           </div>  
+      </div>
+      <div class="row">
+         <div class="col-lg-12">
+            <a class="btn exhibitor-btn " href="#">READ MORE</a><br><br><br>
+            
+         </div>
+         
+      </div>
+   </div> 
+</section>
+
+
+
+
+<section style="background-color:#1A1830;">
+   <div class="container" style="color: white; padding-top: 70px; padding-bottom: 70px;">
+      <div class="row">
+         <div class="col-lg-12">
+            <h2 class="text-center" style="margin-bottom: 8px;margin-bottom:20px;font-weight: 400px;font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">INTERACTIVE VIRTUAL PLATFORM</h2>
+            <p class="text-center" style="margin-bottom: 16px;font-family: 'Lato', 'Roboto', sans-serif;
+    line-height: 26px; font-size:20px;">This Virtual Exhibition is focused on the major export sectors of Bangladesh, namely: readymade garments, leather & leather products, jute & jute products, home decor & home-textiles, pharmaceuticals, manufacturers of agricultural and agro-processed products, fisheries, plastics, light engineering products, electronics, ICT, Furniture, ceramics, and handicrafts.</p>
+            
+         </div>
+      </div>
+      
+   </div>
+   
+</section> 
+
+<section>
+   <div class="container-fluid" style="display: block;">
+      <div class="row">
+         <img width="100%" class="img-fluid" src="images/home-3d.jpg" alt="Home">
+      </div>
+   </div>
+</section>
+
+<section class="download-menu">
+   <div class="container" style="padding-top:70px; font-family: 'Lato', 'Raleway', sans-serif; font-weight: 400;">
+   <div class="row">
+      <div class="col-lg-1 text-center"></div>
+      <div class="col-lg-2 text-center">
+         <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <h6 style="color:black; min-height: 38px;">Exhibitor Offer Bangla</h6>
+      </a>
+      <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <i class="fa-size fa-fx fas fa-file-pdf"></i>
+      </a>
+      </div>
+      
+      <div class="col-lg-2 text-center">
+         <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <h6 style="color:black; min-height: 38px;">Exhibitor Offer English</h6>
+      </a>
+      <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <i class="fa-size fa-fx fas fa-file-pdf"></i>
+      </a>
+      </div>
+      <div class="col-lg-2 text-center">
+          <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <h6 style="color:black;  min-height: 38px;">Partnership Offer</h6>
+      </a>
+      <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <i class="fa-size fa-fx fas fa-file-pdf"></i>
+      </a>
+      </div>
+      <div class="col-lg-2 text-center">
+          <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <h6 style="color:black; min-height: 38px;">Fact Sheet</h6>
+      </a>
+      <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <i class="fa-size fa-fx fas fa-file-pdf"></i>
+      </a>
+      </div>
+      <div class="col-lg-2 text-center">
+          <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <h6 style="color:black; min-height: 38px;">Application Form</h6>
+      </a>
+      <a target="_blank" href="#" class="text-center" title="Click  to Download">
+         <i class="fa-size fa-fx fas fa-file-pdf"></i>
+      </a>
+      </div>
+      <div class="col-lg-1 text-center"></div>
+   </div>
+   </div>
+</section>
+   
+
+<section>
+   <footer style="padding-top:70px;">
+      <div class="container-fluid">
+         <div class="row">
+            <img class="img-fluid" src="images/web-footer-branding-1.png">
+         </div>
+      </div>
+   </footer>
+</section>
+
+
+
+   <footer style="border-top: 2px solid #1a1830; background-color:#1a1830; color:white; padding-top:50px;">
+      <div class="container">
+         <div class="row">
+            <div class="col-lg-12 text-center">
+               <div class="ts-footer-social">
+              <ul>
+                        <li><a style="height:40px;" target="_blank" href=""><i style="line-height:40px;" class="fab fa-facebook"></i></a>  </li>
+                        <li><a style="height:40px" target="_blank" href=""><i style="line-height:40px;" class="fab fa-linkedin"></i></a></li>
+                        <li><a style="height:40px" target="_blank" href=""><i style="line-height:40px;" class="fab fa-twitter"></i></a></li>
+                        <li><a style="height:40px" style= target="_blank" href=""><i style="line-height:40px;" class="fab fa-youtube"></i></a></li>
+                        <li><a style="height:40px" style= target="_blank" href=""><i style="line-height:40px;" class="fab fa-instagram"></i></a></li>
+                    </ul>
+            </div>
+            </div>
+            </div>
+            <div  class="row">
+            <div class="col-lg-12 text-center mt-4">
+                     <a style="color:white; margin-top: 70px;" href="">About Bangladesh</a> | 
+                     <a style="color:white; margin-top: 70px;" href="">About Organizer</a> |
+                     <a style="color:white; margin-top: 70px;" href="">For Buyer</a> |
+                     <a style="color:white; margin-top: 70px;" href="">For Exhibitors</a> |
+                     <a style="color:white; margin-top: 70px;" href="">Contact Us</a>
+            </div>
+            </div>
+         </div>
+         
+      </div>
+
+
+        <div class="row">
+            <div class="col-md-12 mt-4">
+                <div class="text-center">
+                    <a  title="Visit the EPB Website"  target="_blank" href="http://www.epb.gov.bd">
+                        <img style=" margin-right: 40px;" class="for-event-logo" width="80"  src="https://sourcing-bangladesh.com/sourcingbd/images/logos/epb-logo.png" alt="epb">
+                    </a>
+
+
+                    <a title="Visit the CEMS-Global Website"  target="_blank" href="https://cemsonline.com/"> <img class="for-event-logo"   width="80"  src="https://sourcing-bangladesh.com/sourcingbd/images/logos/cems-global-wihte.png" alt="cemsonline"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+
+
+            <div class="col-12">
+                <div class="copyright-text  text-center">
+                    <p class="text-color-white"> Copyright@Sourcing Bangladesh 2021 All rights Reserved, <a class="text-color-white text-underline-hover" href="https://sourcing-bangladesh.com/privacy-policy-sb" > <u>Privacy Policy</u></a></p>
+                </div>
+            </div>
+            <div class="col-12 text-right">
+            <div class="BackTo">
+    <a href="#" class="fa fa-angle-up" aria-hidden="true"></a>
+</div>
+</div>
+</div>
+        </div>
+     </footer>
+
+    </div>
+</footer>
+</div>
+</body>
+</html>
